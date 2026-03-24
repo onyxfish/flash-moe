@@ -1,5 +1,5 @@
 {
-  "model_path": "/Users/cgroskop/.cache/huggingface/hub/models--mlx-community--Qwen3.5-397B-A17B-4bit/snapshots/39159bd8aa74f5c8446d2b2dc584f62bb51cb0d3/",
+  "model_path": "~/.cache/huggingface/hub/models--mlx-community--Qwen3.5-397B-A17B-4bit/snapshots/39159bd8aa74f5c8446d2b2dc584f62bb51cb0d3/",
   "expert_reads": {
     "0": {
       "gate_proj.weight": {
@@ -8,7 +8,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00001-of-00046.safetensors",
@@ -16,7 +20,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00001-of-00046.safetensors",
@@ -24,7 +32,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00001-of-00046.safetensors",
@@ -32,7 +44,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00001-of-00046.safetensors",
@@ -40,7 +56,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00001-of-00046.safetensors",
@@ -48,7 +68,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00001-of-00046.safetensors",
@@ -56,7 +80,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00001-of-00046.safetensors",
@@ -64,7 +92,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00001-of-00046.safetensors",
@@ -72,7 +104,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "1": {
@@ -82,7 +118,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00002-of-00046.safetensors",
@@ -90,7 +130,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00002-of-00046.safetensors",
@@ -98,7 +142,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00002-of-00046.safetensors",
@@ -106,7 +154,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00002-of-00046.safetensors",
@@ -114,7 +166,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00002-of-00046.safetensors",
@@ -122,7 +178,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00002-of-00046.safetensors",
@@ -130,7 +190,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00002-of-00046.safetensors",
@@ -138,7 +202,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00002-of-00046.safetensors",
@@ -146,7 +214,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "2": {
@@ -156,7 +228,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00002-of-00046.safetensors",
@@ -164,7 +240,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00002-of-00046.safetensors",
@@ -172,7 +252,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00003-of-00046.safetensors",
@@ -180,7 +264,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00003-of-00046.safetensors",
@@ -188,7 +276,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00003-of-00046.safetensors",
@@ -196,7 +288,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00003-of-00046.safetensors",
@@ -204,7 +300,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00003-of-00046.safetensors",
@@ -212,7 +312,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00003-of-00046.safetensors",
@@ -220,7 +324,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "3": {
@@ -230,7 +338,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00003-of-00046.safetensors",
@@ -238,7 +350,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00003-of-00046.safetensors",
@@ -246,7 +362,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00003-of-00046.safetensors",
@@ -254,7 +374,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00003-of-00046.safetensors",
@@ -262,7 +386,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00003-of-00046.safetensors",
@@ -270,7 +398,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00004-of-00046.safetensors",
@@ -278,7 +410,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00004-of-00046.safetensors",
@@ -286,7 +422,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00004-of-00046.safetensors",
@@ -294,7 +434,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "4": {
@@ -304,7 +448,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00004-of-00046.safetensors",
@@ -312,7 +460,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00004-of-00046.safetensors",
@@ -320,7 +472,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00004-of-00046.safetensors",
@@ -328,7 +484,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00004-of-00046.safetensors",
@@ -336,7 +496,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00004-of-00046.safetensors",
@@ -344,7 +508,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00004-of-00046.safetensors",
@@ -352,7 +520,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00004-of-00046.safetensors",
@@ -360,7 +532,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00004-of-00046.safetensors",
@@ -368,7 +544,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "5": {
@@ -378,7 +558,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00005-of-00046.safetensors",
@@ -386,7 +570,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00005-of-00046.safetensors",
@@ -394,7 +582,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00005-of-00046.safetensors",
@@ -402,7 +594,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00005-of-00046.safetensors",
@@ -410,7 +606,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00005-of-00046.safetensors",
@@ -418,7 +618,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00005-of-00046.safetensors",
@@ -426,7 +630,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00005-of-00046.safetensors",
@@ -434,7 +642,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00005-of-00046.safetensors",
@@ -442,7 +654,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "6": {
@@ -452,7 +668,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00005-of-00046.safetensors",
@@ -460,7 +680,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00005-of-00046.safetensors",
@@ -468,7 +692,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00006-of-00046.safetensors",
@@ -476,7 +704,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00006-of-00046.safetensors",
@@ -484,7 +716,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00006-of-00046.safetensors",
@@ -492,7 +728,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00006-of-00046.safetensors",
@@ -500,7 +740,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00006-of-00046.safetensors",
@@ -508,7 +752,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00006-of-00046.safetensors",
@@ -516,7 +764,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "7": {
@@ -526,7 +778,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00006-of-00046.safetensors",
@@ -534,7 +790,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00006-of-00046.safetensors",
@@ -542,7 +802,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00006-of-00046.safetensors",
@@ -550,7 +814,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00006-of-00046.safetensors",
@@ -558,7 +826,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00006-of-00046.safetensors",
@@ -566,7 +838,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00007-of-00046.safetensors",
@@ -574,7 +850,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00007-of-00046.safetensors",
@@ -582,7 +862,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00007-of-00046.safetensors",
@@ -590,7 +874,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "8": {
@@ -600,7 +888,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00007-of-00046.safetensors",
@@ -608,7 +900,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00007-of-00046.safetensors",
@@ -616,7 +912,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00007-of-00046.safetensors",
@@ -624,7 +924,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00007-of-00046.safetensors",
@@ -632,7 +936,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00007-of-00046.safetensors",
@@ -640,7 +948,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00007-of-00046.safetensors",
@@ -648,7 +960,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00007-of-00046.safetensors",
@@ -656,7 +972,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00007-of-00046.safetensors",
@@ -664,7 +984,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "9": {
@@ -674,7 +998,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00008-of-00046.safetensors",
@@ -682,7 +1010,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00008-of-00046.safetensors",
@@ -690,7 +1022,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00008-of-00046.safetensors",
@@ -698,7 +1034,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00008-of-00046.safetensors",
@@ -706,7 +1046,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00008-of-00046.safetensors",
@@ -714,7 +1058,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00008-of-00046.safetensors",
@@ -722,7 +1070,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00008-of-00046.safetensors",
@@ -730,7 +1082,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00008-of-00046.safetensors",
@@ -738,7 +1094,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "10": {
@@ -748,7 +1108,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00008-of-00046.safetensors",
@@ -756,7 +1120,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00008-of-00046.safetensors",
@@ -764,7 +1132,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00009-of-00046.safetensors",
@@ -772,7 +1144,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00009-of-00046.safetensors",
@@ -780,7 +1156,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00009-of-00046.safetensors",
@@ -788,7 +1168,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00009-of-00046.safetensors",
@@ -796,7 +1180,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00009-of-00046.safetensors",
@@ -804,7 +1192,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00009-of-00046.safetensors",
@@ -812,7 +1204,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "11": {
@@ -822,7 +1218,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00009-of-00046.safetensors",
@@ -830,7 +1230,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00009-of-00046.safetensors",
@@ -838,7 +1242,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00009-of-00046.safetensors",
@@ -846,7 +1254,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00009-of-00046.safetensors",
@@ -854,7 +1266,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00009-of-00046.safetensors",
@@ -862,7 +1278,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00010-of-00046.safetensors",
@@ -870,7 +1290,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00010-of-00046.safetensors",
@@ -878,7 +1302,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00010-of-00046.safetensors",
@@ -886,7 +1314,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "12": {
@@ -896,7 +1328,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00010-of-00046.safetensors",
@@ -904,7 +1340,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00010-of-00046.safetensors",
@@ -912,7 +1352,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00010-of-00046.safetensors",
@@ -920,7 +1364,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00010-of-00046.safetensors",
@@ -928,7 +1376,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00010-of-00046.safetensors",
@@ -936,7 +1388,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00010-of-00046.safetensors",
@@ -944,7 +1400,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00010-of-00046.safetensors",
@@ -952,7 +1412,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00010-of-00046.safetensors",
@@ -960,7 +1424,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "13": {
@@ -970,7 +1438,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00011-of-00046.safetensors",
@@ -978,7 +1450,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00011-of-00046.safetensors",
@@ -986,7 +1462,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00011-of-00046.safetensors",
@@ -994,7 +1474,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00011-of-00046.safetensors",
@@ -1002,7 +1486,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00011-of-00046.safetensors",
@@ -1010,7 +1498,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00011-of-00046.safetensors",
@@ -1018,7 +1510,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00011-of-00046.safetensors",
@@ -1026,7 +1522,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00011-of-00046.safetensors",
@@ -1034,7 +1534,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "14": {
@@ -1044,7 +1548,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00011-of-00046.safetensors",
@@ -1052,7 +1560,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00011-of-00046.safetensors",
@@ -1060,7 +1572,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00012-of-00046.safetensors",
@@ -1068,7 +1584,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00012-of-00046.safetensors",
@@ -1076,7 +1596,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00012-of-00046.safetensors",
@@ -1084,7 +1608,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00012-of-00046.safetensors",
@@ -1092,7 +1620,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00012-of-00046.safetensors",
@@ -1100,7 +1632,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00012-of-00046.safetensors",
@@ -1108,7 +1644,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "15": {
@@ -1118,7 +1658,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00012-of-00046.safetensors",
@@ -1126,7 +1670,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00012-of-00046.safetensors",
@@ -1134,7 +1682,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00012-of-00046.safetensors",
@@ -1142,7 +1694,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00012-of-00046.safetensors",
@@ -1150,7 +1706,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00012-of-00046.safetensors",
@@ -1158,7 +1718,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00013-of-00046.safetensors",
@@ -1166,7 +1730,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00013-of-00046.safetensors",
@@ -1174,7 +1742,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00013-of-00046.safetensors",
@@ -1182,7 +1754,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "16": {
@@ -1192,7 +1768,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00013-of-00046.safetensors",
@@ -1200,7 +1780,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00013-of-00046.safetensors",
@@ -1208,7 +1792,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00013-of-00046.safetensors",
@@ -1216,7 +1804,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00013-of-00046.safetensors",
@@ -1224,7 +1816,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00013-of-00046.safetensors",
@@ -1232,7 +1828,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00013-of-00046.safetensors",
@@ -1240,7 +1840,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00013-of-00046.safetensors",
@@ -1248,7 +1852,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00013-of-00046.safetensors",
@@ -1256,7 +1864,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "17": {
@@ -1266,7 +1878,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00014-of-00046.safetensors",
@@ -1274,7 +1890,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00014-of-00046.safetensors",
@@ -1282,7 +1902,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00014-of-00046.safetensors",
@@ -1290,7 +1914,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00014-of-00046.safetensors",
@@ -1298,7 +1926,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00014-of-00046.safetensors",
@@ -1306,7 +1938,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00014-of-00046.safetensors",
@@ -1314,7 +1950,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00014-of-00046.safetensors",
@@ -1322,7 +1962,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00014-of-00046.safetensors",
@@ -1330,7 +1974,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "18": {
@@ -1340,7 +1988,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00014-of-00046.safetensors",
@@ -1348,7 +2000,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00014-of-00046.safetensors",
@@ -1356,7 +2012,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00015-of-00046.safetensors",
@@ -1364,7 +2024,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00015-of-00046.safetensors",
@@ -1372,7 +2036,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00015-of-00046.safetensors",
@@ -1380,7 +2048,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00015-of-00046.safetensors",
@@ -1388,7 +2060,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00015-of-00046.safetensors",
@@ -1396,7 +2072,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00015-of-00046.safetensors",
@@ -1404,7 +2084,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "19": {
@@ -1414,7 +2098,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00015-of-00046.safetensors",
@@ -1422,7 +2110,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00015-of-00046.safetensors",
@@ -1430,7 +2122,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00015-of-00046.safetensors",
@@ -1438,7 +2134,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00015-of-00046.safetensors",
@@ -1446,7 +2146,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00015-of-00046.safetensors",
@@ -1454,7 +2158,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00016-of-00046.safetensors",
@@ -1462,7 +2170,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00016-of-00046.safetensors",
@@ -1470,7 +2182,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00016-of-00046.safetensors",
@@ -1478,7 +2194,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "20": {
@@ -1488,7 +2208,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00016-of-00046.safetensors",
@@ -1496,7 +2220,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00016-of-00046.safetensors",
@@ -1504,7 +2232,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00016-of-00046.safetensors",
@@ -1512,7 +2244,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00016-of-00046.safetensors",
@@ -1520,7 +2256,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00016-of-00046.safetensors",
@@ -1528,7 +2268,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00016-of-00046.safetensors",
@@ -1536,7 +2280,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00016-of-00046.safetensors",
@@ -1544,7 +2292,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00016-of-00046.safetensors",
@@ -1552,7 +2304,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "21": {
@@ -1562,7 +2318,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00017-of-00046.safetensors",
@@ -1570,7 +2330,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00017-of-00046.safetensors",
@@ -1578,7 +2342,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00017-of-00046.safetensors",
@@ -1586,7 +2354,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00017-of-00046.safetensors",
@@ -1594,7 +2366,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00017-of-00046.safetensors",
@@ -1602,7 +2378,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00017-of-00046.safetensors",
@@ -1610,7 +2390,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00017-of-00046.safetensors",
@@ -1618,7 +2402,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00017-of-00046.safetensors",
@@ -1626,7 +2414,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "22": {
@@ -1636,7 +2428,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00017-of-00046.safetensors",
@@ -1644,7 +2440,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00017-of-00046.safetensors",
@@ -1652,7 +2452,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00018-of-00046.safetensors",
@@ -1660,7 +2464,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00018-of-00046.safetensors",
@@ -1668,7 +2476,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00018-of-00046.safetensors",
@@ -1676,7 +2488,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00018-of-00046.safetensors",
@@ -1684,7 +2500,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00018-of-00046.safetensors",
@@ -1692,7 +2512,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00018-of-00046.safetensors",
@@ -1700,7 +2524,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "23": {
@@ -1710,7 +2538,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00018-of-00046.safetensors",
@@ -1718,7 +2550,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00018-of-00046.safetensors",
@@ -1726,7 +2562,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00018-of-00046.safetensors",
@@ -1734,7 +2574,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00018-of-00046.safetensors",
@@ -1742,7 +2586,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00018-of-00046.safetensors",
@@ -1750,7 +2598,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00019-of-00046.safetensors",
@@ -1758,7 +2610,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00019-of-00046.safetensors",
@@ -1766,7 +2622,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00019-of-00046.safetensors",
@@ -1774,7 +2634,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "24": {
@@ -1784,7 +2648,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00019-of-00046.safetensors",
@@ -1792,7 +2660,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00019-of-00046.safetensors",
@@ -1800,7 +2672,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00019-of-00046.safetensors",
@@ -1808,7 +2684,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00019-of-00046.safetensors",
@@ -1816,7 +2696,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00019-of-00046.safetensors",
@@ -1824,7 +2708,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00019-of-00046.safetensors",
@@ -1832,7 +2720,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00019-of-00046.safetensors",
@@ -1840,7 +2732,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00019-of-00046.safetensors",
@@ -1848,7 +2744,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "25": {
@@ -1858,7 +2758,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00020-of-00046.safetensors",
@@ -1866,7 +2770,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00020-of-00046.safetensors",
@@ -1874,7 +2782,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00020-of-00046.safetensors",
@@ -1882,7 +2794,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00020-of-00046.safetensors",
@@ -1890,7 +2806,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00020-of-00046.safetensors",
@@ -1898,7 +2818,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00020-of-00046.safetensors",
@@ -1906,7 +2830,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00020-of-00046.safetensors",
@@ -1914,7 +2842,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00020-of-00046.safetensors",
@@ -1922,7 +2854,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "26": {
@@ -1932,7 +2868,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00020-of-00046.safetensors",
@@ -1940,7 +2880,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00020-of-00046.safetensors",
@@ -1948,7 +2892,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00021-of-00046.safetensors",
@@ -1956,7 +2904,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00021-of-00046.safetensors",
@@ -1964,7 +2916,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00021-of-00046.safetensors",
@@ -1972,7 +2928,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00021-of-00046.safetensors",
@@ -1980,7 +2940,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00021-of-00046.safetensors",
@@ -1988,7 +2952,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00021-of-00046.safetensors",
@@ -1996,7 +2964,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "27": {
@@ -2006,7 +2978,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00021-of-00046.safetensors",
@@ -2014,7 +2990,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00021-of-00046.safetensors",
@@ -2022,7 +3002,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00021-of-00046.safetensors",
@@ -2030,7 +3014,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00021-of-00046.safetensors",
@@ -2038,7 +3026,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00021-of-00046.safetensors",
@@ -2046,7 +3038,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00022-of-00046.safetensors",
@@ -2054,7 +3050,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00022-of-00046.safetensors",
@@ -2062,7 +3062,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00022-of-00046.safetensors",
@@ -2070,7 +3074,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "28": {
@@ -2080,7 +3088,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00022-of-00046.safetensors",
@@ -2088,7 +3100,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00022-of-00046.safetensors",
@@ -2096,7 +3112,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00022-of-00046.safetensors",
@@ -2104,7 +3124,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00022-of-00046.safetensors",
@@ -2112,7 +3136,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00022-of-00046.safetensors",
@@ -2120,7 +3148,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00022-of-00046.safetensors",
@@ -2128,7 +3160,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00022-of-00046.safetensors",
@@ -2136,7 +3172,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00022-of-00046.safetensors",
@@ -2144,7 +3184,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "29": {
@@ -2154,7 +3198,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00023-of-00046.safetensors",
@@ -2162,7 +3210,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00023-of-00046.safetensors",
@@ -2170,7 +3222,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00023-of-00046.safetensors",
@@ -2178,7 +3234,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00023-of-00046.safetensors",
@@ -2186,7 +3246,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00023-of-00046.safetensors",
@@ -2194,7 +3258,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00023-of-00046.safetensors",
@@ -2202,7 +3270,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00023-of-00046.safetensors",
@@ -2210,7 +3282,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00023-of-00046.safetensors",
@@ -2218,7 +3294,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "30": {
@@ -2228,7 +3308,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00023-of-00046.safetensors",
@@ -2236,7 +3320,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00023-of-00046.safetensors",
@@ -2244,7 +3332,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00024-of-00046.safetensors",
@@ -2252,7 +3344,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00024-of-00046.safetensors",
@@ -2260,7 +3356,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00024-of-00046.safetensors",
@@ -2268,7 +3368,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00024-of-00046.safetensors",
@@ -2276,7 +3380,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00024-of-00046.safetensors",
@@ -2284,7 +3392,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00024-of-00046.safetensors",
@@ -2292,7 +3404,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "31": {
@@ -2302,7 +3418,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00024-of-00046.safetensors",
@@ -2310,7 +3430,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00024-of-00046.safetensors",
@@ -2318,7 +3442,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00024-of-00046.safetensors",
@@ -2326,7 +3454,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00024-of-00046.safetensors",
@@ -2334,7 +3466,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00024-of-00046.safetensors",
@@ -2342,7 +3478,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00025-of-00046.safetensors",
@@ -2350,7 +3490,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00025-of-00046.safetensors",
@@ -2358,7 +3502,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00025-of-00046.safetensors",
@@ -2366,7 +3514,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "32": {
@@ -2376,7 +3528,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00025-of-00046.safetensors",
@@ -2384,7 +3540,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00025-of-00046.safetensors",
@@ -2392,7 +3552,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00025-of-00046.safetensors",
@@ -2400,7 +3564,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00025-of-00046.safetensors",
@@ -2408,7 +3576,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00025-of-00046.safetensors",
@@ -2416,7 +3588,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00025-of-00046.safetensors",
@@ -2424,7 +3600,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00025-of-00046.safetensors",
@@ -2432,7 +3612,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00025-of-00046.safetensors",
@@ -2440,7 +3624,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "33": {
@@ -2450,7 +3638,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00026-of-00046.safetensors",
@@ -2458,7 +3650,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00026-of-00046.safetensors",
@@ -2466,7 +3662,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00026-of-00046.safetensors",
@@ -2474,7 +3674,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00026-of-00046.safetensors",
@@ -2482,7 +3686,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00026-of-00046.safetensors",
@@ -2490,7 +3698,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00026-of-00046.safetensors",
@@ -2498,7 +3710,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00026-of-00046.safetensors",
@@ -2506,7 +3722,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00026-of-00046.safetensors",
@@ -2514,7 +3734,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "34": {
@@ -2524,7 +3748,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00026-of-00046.safetensors",
@@ -2532,7 +3760,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00026-of-00046.safetensors",
@@ -2540,7 +3772,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00027-of-00046.safetensors",
@@ -2548,7 +3784,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00027-of-00046.safetensors",
@@ -2556,7 +3796,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00027-of-00046.safetensors",
@@ -2564,7 +3808,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00027-of-00046.safetensors",
@@ -2572,7 +3820,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00027-of-00046.safetensors",
@@ -2580,7 +3832,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00027-of-00046.safetensors",
@@ -2588,7 +3844,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "35": {
@@ -2598,7 +3858,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00027-of-00046.safetensors",
@@ -2606,7 +3870,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00027-of-00046.safetensors",
@@ -2614,7 +3882,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00027-of-00046.safetensors",
@@ -2622,7 +3894,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00027-of-00046.safetensors",
@@ -2630,7 +3906,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00027-of-00046.safetensors",
@@ -2638,7 +3918,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00028-of-00046.safetensors",
@@ -2646,7 +3930,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00028-of-00046.safetensors",
@@ -2654,7 +3942,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00028-of-00046.safetensors",
@@ -2662,7 +3954,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "36": {
@@ -2672,7 +3968,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00028-of-00046.safetensors",
@@ -2680,7 +3980,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00028-of-00046.safetensors",
@@ -2688,7 +3992,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00028-of-00046.safetensors",
@@ -2696,7 +4004,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00028-of-00046.safetensors",
@@ -2704,7 +4016,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00028-of-00046.safetensors",
@@ -2712,7 +4028,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00028-of-00046.safetensors",
@@ -2720,7 +4040,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00028-of-00046.safetensors",
@@ -2728,7 +4052,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00028-of-00046.safetensors",
@@ -2736,7 +4064,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "37": {
@@ -2746,7 +4078,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00029-of-00046.safetensors",
@@ -2754,7 +4090,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00029-of-00046.safetensors",
@@ -2762,7 +4102,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00029-of-00046.safetensors",
@@ -2770,7 +4114,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00029-of-00046.safetensors",
@@ -2778,7 +4126,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00029-of-00046.safetensors",
@@ -2786,7 +4138,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00029-of-00046.safetensors",
@@ -2794,7 +4150,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00029-of-00046.safetensors",
@@ -2802,7 +4162,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00029-of-00046.safetensors",
@@ -2810,7 +4174,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "38": {
@@ -2820,7 +4188,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00029-of-00046.safetensors",
@@ -2828,7 +4200,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00029-of-00046.safetensors",
@@ -2836,7 +4212,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00030-of-00046.safetensors",
@@ -2844,7 +4224,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00030-of-00046.safetensors",
@@ -2852,7 +4236,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00030-of-00046.safetensors",
@@ -2860,7 +4248,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00030-of-00046.safetensors",
@@ -2868,7 +4260,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00030-of-00046.safetensors",
@@ -2876,7 +4272,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00030-of-00046.safetensors",
@@ -2884,7 +4284,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "39": {
@@ -2894,7 +4298,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00030-of-00046.safetensors",
@@ -2902,7 +4310,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00030-of-00046.safetensors",
@@ -2910,7 +4322,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00030-of-00046.safetensors",
@@ -2918,7 +4334,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00030-of-00046.safetensors",
@@ -2926,7 +4346,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00030-of-00046.safetensors",
@@ -2934,7 +4358,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00031-of-00046.safetensors",
@@ -2942,7 +4370,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00031-of-00046.safetensors",
@@ -2950,7 +4382,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00031-of-00046.safetensors",
@@ -2958,7 +4394,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "40": {
@@ -2968,7 +4408,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00031-of-00046.safetensors",
@@ -2976,7 +4420,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00031-of-00046.safetensors",
@@ -2984,7 +4432,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00031-of-00046.safetensors",
@@ -2992,7 +4444,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00031-of-00046.safetensors",
@@ -3000,7 +4456,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00031-of-00046.safetensors",
@@ -3008,7 +4468,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00031-of-00046.safetensors",
@@ -3016,7 +4480,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00031-of-00046.safetensors",
@@ -3024,7 +4492,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00031-of-00046.safetensors",
@@ -3032,7 +4504,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "41": {
@@ -3042,7 +4518,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00032-of-00046.safetensors",
@@ -3050,7 +4530,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00032-of-00046.safetensors",
@@ -3058,7 +4542,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00032-of-00046.safetensors",
@@ -3066,7 +4554,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00032-of-00046.safetensors",
@@ -3074,7 +4566,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00032-of-00046.safetensors",
@@ -3082,7 +4578,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00032-of-00046.safetensors",
@@ -3090,7 +4590,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00032-of-00046.safetensors",
@@ -3098,7 +4602,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00032-of-00046.safetensors",
@@ -3106,7 +4614,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "42": {
@@ -3116,7 +4628,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00032-of-00046.safetensors",
@@ -3124,7 +4640,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00032-of-00046.safetensors",
@@ -3132,7 +4652,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00033-of-00046.safetensors",
@@ -3140,7 +4664,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00033-of-00046.safetensors",
@@ -3148,7 +4676,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00033-of-00046.safetensors",
@@ -3156,7 +4688,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00033-of-00046.safetensors",
@@ -3164,7 +4700,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00033-of-00046.safetensors",
@@ -3172,7 +4712,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00033-of-00046.safetensors",
@@ -3180,7 +4724,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "43": {
@@ -3190,7 +4738,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00033-of-00046.safetensors",
@@ -3198,7 +4750,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00033-of-00046.safetensors",
@@ -3206,7 +4762,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00033-of-00046.safetensors",
@@ -3214,7 +4774,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00033-of-00046.safetensors",
@@ -3222,7 +4786,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00033-of-00046.safetensors",
@@ -3230,7 +4798,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00034-of-00046.safetensors",
@@ -3238,7 +4810,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00034-of-00046.safetensors",
@@ -3246,7 +4822,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00034-of-00046.safetensors",
@@ -3254,7 +4834,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "44": {
@@ -3264,7 +4848,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00034-of-00046.safetensors",
@@ -3272,7 +4860,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00034-of-00046.safetensors",
@@ -3280,7 +4872,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00034-of-00046.safetensors",
@@ -3288,7 +4884,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00034-of-00046.safetensors",
@@ -3296,7 +4896,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00034-of-00046.safetensors",
@@ -3304,7 +4908,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00034-of-00046.safetensors",
@@ -3312,7 +4920,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00034-of-00046.safetensors",
@@ -3320,7 +4932,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00034-of-00046.safetensors",
@@ -3328,7 +4944,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "45": {
@@ -3338,7 +4958,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00035-of-00046.safetensors",
@@ -3346,7 +4970,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00035-of-00046.safetensors",
@@ -3354,7 +4982,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00035-of-00046.safetensors",
@@ -3362,7 +4994,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00035-of-00046.safetensors",
@@ -3370,7 +5006,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00035-of-00046.safetensors",
@@ -3378,7 +5018,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00035-of-00046.safetensors",
@@ -3386,7 +5030,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00035-of-00046.safetensors",
@@ -3394,7 +5042,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00035-of-00046.safetensors",
@@ -3402,7 +5054,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "46": {
@@ -3412,7 +5068,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00035-of-00046.safetensors",
@@ -3420,7 +5080,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00035-of-00046.safetensors",
@@ -3428,7 +5092,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00036-of-00046.safetensors",
@@ -3436,7 +5104,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00036-of-00046.safetensors",
@@ -3444,7 +5116,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00036-of-00046.safetensors",
@@ -3452,7 +5128,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00036-of-00046.safetensors",
@@ -3460,7 +5140,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00036-of-00046.safetensors",
@@ -3468,7 +5152,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00036-of-00046.safetensors",
@@ -3476,7 +5164,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "47": {
@@ -3486,7 +5178,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00036-of-00046.safetensors",
@@ -3494,7 +5190,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00036-of-00046.safetensors",
@@ -3502,7 +5202,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00036-of-00046.safetensors",
@@ -3510,7 +5214,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00036-of-00046.safetensors",
@@ -3518,7 +5226,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00036-of-00046.safetensors",
@@ -3526,7 +5238,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00037-of-00046.safetensors",
@@ -3534,7 +5250,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00037-of-00046.safetensors",
@@ -3542,7 +5262,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00037-of-00046.safetensors",
@@ -3550,7 +5274,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "48": {
@@ -3560,7 +5288,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00037-of-00046.safetensors",
@@ -3568,7 +5300,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00037-of-00046.safetensors",
@@ -3576,7 +5312,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00037-of-00046.safetensors",
@@ -3584,7 +5324,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00037-of-00046.safetensors",
@@ -3592,7 +5336,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00037-of-00046.safetensors",
@@ -3600,7 +5348,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00037-of-00046.safetensors",
@@ -3608,7 +5360,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00037-of-00046.safetensors",
@@ -3616,7 +5372,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00037-of-00046.safetensors",
@@ -3624,7 +5384,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "49": {
@@ -3634,7 +5398,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00038-of-00046.safetensors",
@@ -3642,7 +5410,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00038-of-00046.safetensors",
@@ -3650,7 +5422,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00038-of-00046.safetensors",
@@ -3658,7 +5434,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00038-of-00046.safetensors",
@@ -3666,7 +5446,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00038-of-00046.safetensors",
@@ -3674,7 +5458,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00038-of-00046.safetensors",
@@ -3682,7 +5470,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00038-of-00046.safetensors",
@@ -3690,7 +5482,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00038-of-00046.safetensors",
@@ -3698,7 +5494,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "50": {
@@ -3708,7 +5508,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00038-of-00046.safetensors",
@@ -3716,7 +5520,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00038-of-00046.safetensors",
@@ -3724,7 +5532,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00039-of-00046.safetensors",
@@ -3732,7 +5544,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00039-of-00046.safetensors",
@@ -3740,7 +5556,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00039-of-00046.safetensors",
@@ -3748,7 +5568,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00039-of-00046.safetensors",
@@ -3756,7 +5580,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00039-of-00046.safetensors",
@@ -3764,7 +5592,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00039-of-00046.safetensors",
@@ -3772,7 +5604,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "51": {
@@ -3782,7 +5618,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00039-of-00046.safetensors",
@@ -3790,7 +5630,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00039-of-00046.safetensors",
@@ -3798,7 +5642,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00039-of-00046.safetensors",
@@ -3806,7 +5654,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00039-of-00046.safetensors",
@@ -3814,7 +5666,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00039-of-00046.safetensors",
@@ -3822,7 +5678,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00040-of-00046.safetensors",
@@ -3830,7 +5690,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00040-of-00046.safetensors",
@@ -3838,7 +5702,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00040-of-00046.safetensors",
@@ -3846,7 +5714,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "52": {
@@ -3856,7 +5728,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00040-of-00046.safetensors",
@@ -3864,7 +5740,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00040-of-00046.safetensors",
@@ -3872,7 +5752,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00040-of-00046.safetensors",
@@ -3880,7 +5764,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00040-of-00046.safetensors",
@@ -3888,7 +5776,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00040-of-00046.safetensors",
@@ -3896,7 +5788,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00040-of-00046.safetensors",
@@ -3904,7 +5800,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00040-of-00046.safetensors",
@@ -3912,7 +5812,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00040-of-00046.safetensors",
@@ -3920,7 +5824,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "53": {
@@ -3930,7 +5838,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00041-of-00046.safetensors",
@@ -3938,7 +5850,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00041-of-00046.safetensors",
@@ -3946,7 +5862,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00041-of-00046.safetensors",
@@ -3954,7 +5874,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00041-of-00046.safetensors",
@@ -3962,7 +5886,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00041-of-00046.safetensors",
@@ -3970,7 +5898,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00041-of-00046.safetensors",
@@ -3978,7 +5910,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00041-of-00046.safetensors",
@@ -3986,7 +5922,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00041-of-00046.safetensors",
@@ -3994,7 +5934,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "54": {
@@ -4004,7 +5948,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00041-of-00046.safetensors",
@@ -4012,7 +5960,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00041-of-00046.safetensors",
@@ -4020,7 +5972,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00042-of-00046.safetensors",
@@ -4028,7 +5984,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00042-of-00046.safetensors",
@@ -4036,7 +5996,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00042-of-00046.safetensors",
@@ -4044,7 +6008,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00042-of-00046.safetensors",
@@ -4052,7 +6020,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00042-of-00046.safetensors",
@@ -4060,7 +6032,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00042-of-00046.safetensors",
@@ -4068,7 +6044,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "55": {
@@ -4078,7 +6058,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00042-of-00046.safetensors",
@@ -4086,7 +6070,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00042-of-00046.safetensors",
@@ -4094,7 +6082,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00042-of-00046.safetensors",
@@ -4102,7 +6094,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00042-of-00046.safetensors",
@@ -4110,7 +6106,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00042-of-00046.safetensors",
@@ -4118,7 +6118,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00043-of-00046.safetensors",
@@ -4126,7 +6130,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00043-of-00046.safetensors",
@@ -4134,7 +6142,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00043-of-00046.safetensors",
@@ -4142,7 +6154,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "56": {
@@ -4152,7 +6168,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00043-of-00046.safetensors",
@@ -4160,7 +6180,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00043-of-00046.safetensors",
@@ -4168,7 +6192,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00043-of-00046.safetensors",
@@ -4176,7 +6204,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00043-of-00046.safetensors",
@@ -4184,7 +6216,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00043-of-00046.safetensors",
@@ -4192,7 +6228,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00043-of-00046.safetensors",
@@ -4200,7 +6240,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00043-of-00046.safetensors",
@@ -4208,7 +6252,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00043-of-00046.safetensors",
@@ -4216,7 +6264,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "57": {
@@ -4226,7 +6278,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00044-of-00046.safetensors",
@@ -4234,7 +6290,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00044-of-00046.safetensors",
@@ -4242,7 +6302,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00044-of-00046.safetensors",
@@ -4250,7 +6314,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00044-of-00046.safetensors",
@@ -4258,7 +6326,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00044-of-00046.safetensors",
@@ -4266,7 +6338,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00044-of-00046.safetensors",
@@ -4274,7 +6350,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00044-of-00046.safetensors",
@@ -4282,7 +6362,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00044-of-00046.safetensors",
@@ -4290,7 +6374,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "58": {
@@ -4300,7 +6388,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00044-of-00046.safetensors",
@@ -4308,7 +6400,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00044-of-00046.safetensors",
@@ -4316,7 +6412,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00045-of-00046.safetensors",
@@ -4324,7 +6424,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00045-of-00046.safetensors",
@@ -4332,7 +6436,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00045-of-00046.safetensors",
@@ -4340,7 +6448,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00045-of-00046.safetensors",
@@ -4348,7 +6460,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00045-of-00046.safetensors",
@@ -4356,7 +6472,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00045-of-00046.safetensors",
@@ -4364,7 +6484,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     },
     "59": {
@@ -4374,7 +6498,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "gate_proj.scales": {
         "file": "model-00045-of-00046.safetensors",
@@ -4382,7 +6510,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "gate_proj.biases": {
         "file": "model-00045-of-00046.safetensors",
@@ -4390,7 +6522,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.weight": {
         "file": "model-00045-of-00046.safetensors",
@@ -4398,7 +6534,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 1024, 512]
+        "shape": [
+          512,
+          1024,
+          512
+        ]
       },
       "up_proj.scales": {
         "file": "model-00045-of-00046.safetensors",
@@ -4406,7 +6546,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "up_proj.biases": {
         "file": "model-00045-of-00046.safetensors",
@@ -4414,7 +6558,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 1024, 64]
+        "shape": [
+          512,
+          1024,
+          64
+        ]
       },
       "down_proj.weight": {
         "file": "model-00046-of-00046.safetensors",
@@ -4422,7 +6570,11 @@
         "expert_stride": 2097152,
         "expert_size": 2097152,
         "total_size": 1073741824,
-        "shape": [512, 4096, 128]
+        "shape": [
+          512,
+          4096,
+          128
+        ]
       },
       "down_proj.scales": {
         "file": "model-00046-of-00046.safetensors",
@@ -4430,7 +6582,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       },
       "down_proj.biases": {
         "file": "model-00046-of-00046.safetensors",
@@ -4438,7 +6594,11 @@
         "expert_stride": 131072,
         "expert_size": 131072,
         "total_size": 67108864,
-        "shape": [512, 4096, 16]
+        "shape": [
+          512,
+          4096,
+          16
+        ]
       }
     }
   }

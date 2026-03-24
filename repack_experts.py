@@ -116,7 +116,7 @@ def load_index(index_path):
     """Load expert_index.json and return expert_reads dict + model_path."""
     with open(index_path) as f:
         idx = json.load(f)
-    return idx["expert_reads"], idx["model_path"]
+    return idx["expert_reads"], os.path.expanduser(idx["model_path"])
 
 
 def verify_component_sizes(expert_reads):
@@ -278,7 +278,7 @@ def main():
     )
     parser.add_argument(
         "--index",
-        default="/Users/cgroskop/src/flash-moe/expert_index.json",
+        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "expert_index.json"),
         help="Path to expert_index.json",
     )
     parser.add_argument(

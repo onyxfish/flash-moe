@@ -6,6 +6,74 @@ Pure C/Metal inference engine that runs **Qwen3.5-397B-A17B** (a 397 billion par
 
 The entire 209GB model streams from SSD through a custom Metal compute pipeline. No Python. No frameworks. Just C, Objective-C, and hand-tuned Metal shaders.
 
+## Quick Start
+
+### 1. Download the model (~209GB)
+
+```bash
+brew install hf
+hf download mlx-community/Qwen3.5-397B-A17B-4bit
+```
+
+This downloads to `~/.cache/huggingface/hub/`. You need ~450GB free during conversion, ~210GB after.
+
+### 2. Install dependencies
+
+```bash
+uv sync
+```
+
+### 3. Export weights
+
+```bash
+# Non-expert weights → model_weights.bin + model_weights.json (5.5GB)
+cd metal_infer
+uv run extract_weights.py
+
+# Vocabulary for token decoding → vocab.bin
+uv run export_vocab.py
+
+# BPE tokenizer for encoding prompts → tokenizer.bin
+uv run export_tokenizer.py
+```
+
+### 4. Repack expert weights (~218GB, takes ~30 min)
+
+```bash
+cd ..
+uv run repack_experts.py
+```
+
+This reads `expert_index.json` and writes `packed_experts/layer_00.bin` … `layer_59.bin` into the model snapshot directory. Test a single layer first if you want to verify:
+
+```bash
+python repack_experts.py --layers 0 --verify-only 0
+```
+
+### 5. Build
+
+```bash
+cd metal_infer
+make
+```
+
+### 6. Run
+
+```bash
+# Ask a question (streams output with thinking traces)
+./infer --prompt "Explain quantum computing"
+
+# Cap thinking to 500 tokens, leaving more budget for the answer
+./infer --prompt "Explain quantum computing" --think-budget 500
+
+# Interactive chat with tool calling (run in two shells)
+./infer --serve 8000
+./chat
+
+# Per-layer timing breakdown
+./infer --prompt "Hello" --tokens 20 --timing --verbose
+```
+
 ## Results
 
 ![Progress](progress.png)
@@ -66,43 +134,28 @@ CMD3(prev) → CMD1: attention projections + delta-net  [1.22ms GPU]
 
 On Apple Silicon, SSD DMA and GPU compute share the same memory controller and cannot be profitably overlapped. The GPU's dequant kernels are bandwidth-saturated at ~418 GiB/s. Even small background SSD DMA causes disproportionate GPU latency spikes through memory controller arbitration. The serial pipeline (GPU → SSD → GPU) is hardware-optimal.
 
-## Quick Start
-
-```bash
-cd metal_infer
-make
-# 4-bit inference (needs packed_experts/ directory)
-./infer --prompt "Explain quantum computing" --tokens 100
-
-# 2-bit inference (faster but breaks tool calling)
-./infer --prompt "Explain quantum computing" --tokens 100 --2bit
-
-# Interactive chat with tool calling
-./chat
-
-# Per-layer timing breakdown
-./infer --prompt "Hello" --tokens 20 --timing
-```
-
 ## Project Structure
 
 ```
 metal_infer/
-  infer.m              # Complete inference engine (~7000 lines)
-  shaders.metal        # Metal compute kernels (~1200 lines)
-  chat.m               # Interactive chat TUI with tool calling
-  tokenizer.h          # C BPE tokenizer (single-header, 449 lines)
-  main.m               # MoE-only benchmark
-  Makefile             # Build system
-  extract_weights.py   # Creates model_weights.bin from safetensors
-  repack_experts_2bit.py  # 4-bit → 2-bit expert requantization
-  train_predictor.py   # Expert routing prediction analysis
-  model_weights.bin    # Non-expert weights (5.5GB, mmap'd)
-  model_weights.json   # Tensor manifest
-  vocab.bin            # Vocabulary for token decoding
-  tokenizer.bin        # Pre-exported BPE tokenizer data
+  infer.m                  # Complete inference engine (~7000 lines)
+  shaders.metal            # Metal compute kernels (~1200 lines)
+  chat.m                   # Interactive chat TUI with tool calling
+  tokenizer.h              # C BPE tokenizer (single-header)
+  main.m                   # MoE-only benchmark
+  Makefile                 # Build system
+  extract_weights.py       # HF safetensors → model_weights.bin + .json
+  export_vocab.py          # HF tokenizer.json → vocab.bin (token decoding)
+  export_tokenizer.py      # HF tokenizer.json → tokenizer.bin (BPE encoding)
+  repack_experts_2bit.py   # 4-bit → 2-bit expert requantization
+  train_predictor.py       # Expert routing prediction analysis
+  model_weights.bin        # Non-expert weights (5.5GB, mmap'd)  [generated]
+  model_weights.json       # Tensor manifest                      [generated]
+  vocab.bin                # Token ID → string map                [generated]
+  tokenizer.bin            # BPE tokenizer data                   [generated]
 
-repack_experts.py      # 4-bit expert packing from safetensors
+repack_experts.py      # 4-bit expert packing → packed_experts/  [run from repo root]
+ask.py                 # Plain-text wrapper around infer
 progress.py            # Results visualization (Q2/Q4 tracks)
 results.tsv            # Experiment log (58 experiments)
 ```

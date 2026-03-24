@@ -19,19 +19,20 @@ Binary format:
 """
 
 import json
+import os
 import struct
 import sys
 
 
 def main():
+    _snapshot = (
+        "models--mlx-community--Qwen3.5-397B-A17B-4bit"
+        "/snapshots/39159bd8aa74f5c8446d2b2dc584f62bb51cb0d3/tokenizer.json"
+    )
     tok_path = (
         sys.argv[1]
         if len(sys.argv) > 1
-        else (
-            "/Users/cgroskop/.cache/huggingface/hub/"
-            "models--mlx-community--Qwen3.5-397B-A17B-4bit/"
-            "snapshots/39159bd8aa74f5c8446d2b2dc584f62bb51cb0d3/tokenizer.json"
-        )
+        else os.path.expanduser(f"~/.cache/huggingface/hub/{_snapshot}")
     )
     out_path = sys.argv[2] if len(sys.argv) > 2 else "tokenizer.bin"
 
@@ -82,8 +83,6 @@ def main():
     print(f"  Vocab: {len(sorted_vocab)} entries")
     print(f"  Merges: {len(merges)} rules")
     print(f"  Added tokens: {len(added)} entries")
-
-    import os
 
     sz = os.path.getsize(out_path)
     print(f"  File size: {sz / 1024 / 1024:.1f} MB")
