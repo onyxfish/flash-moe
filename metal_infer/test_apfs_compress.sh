@@ -3,9 +3,8 @@
 # Compresses a copy of one layer file with APFS compression,
 # then benchmarks pread throughput on compressed vs uncompressed.
 
-set -e
-
-EXPERTS_DIR="/Users/danielwoods/.cache/huggingface/hub/models--mlx-community--Qwen3.5-397B-A17B-4bit/snapshots/39159bd8aa74f5c8446d2b2dc584f62bb51cb0d3/packed_experts"
+set
+EXPERTS_DIR="/Users/cgroskop/.cache/huggingface/hub/models--mlx-community--Qwen3.5-397B-A17B-4bit/snapshots/39159bd8aa74f5c8446d2b2dc584f62bb51cb0d3/packed_experts"
 SRC="$EXPERTS_DIR/layer_00.bin"
 WORKDIR="/tmp/apfs_compress_test"
 
