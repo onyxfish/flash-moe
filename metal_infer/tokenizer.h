@@ -201,7 +201,7 @@ int bpe_load(bpe_tokenizer *tok, const char *path) {
                   key, klen, i);
     }
 
-    fprintf(stderr, "bpe_load: %u vocab, %u merges, %u added tokens\n",
+    if (g_verbose) fprintf(stderr, "bpe_load: %u vocab, %u merges, %u added tokens\n",
             tok->vocab_size, tok->num_merges, tok->num_added);
     return 0;
 

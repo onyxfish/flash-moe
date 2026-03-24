@@ -161,6 +161,8 @@ typedef struct {
 
 static LayerTimingAccum g_timing = {0};
 static int g_timing_enabled = 0;
+static int g_verbose = 0;          // --verbose: show diagnostic output on stderr
+#define LOG(...) do { if (g_verbose) fprintf(stderr, __VA_ARGS__); } while(0)
 
 // Temporal prediction pipeline counters (declared early for timing_print access)
 static int g_pred_enabled = 0;
@@ -456,7 +458,7 @@ static TensorManifest *load_manifest(const char *json_path) {
             m->num_tensors++;
         }
 
-        printf("[manifest] Loaded %d tensors from %s\n", m->num_tensors, json_path);
+        LOG("[manifest] Loaded %d tensors from %s\n", m->num_tensors, json_path);
         return m;
     }
 }
@@ -551,7 +553,7 @@ static WeightFile *open_weights(const char *bin_path, const char *json_path) {
     wf->size = size;
     wf->manifest = manifest;
 
-    printf("[weights] mmap'd %.2f GB from %s\n", size / 1e9, bin_path);
+    LOG("[weights] mmap'd %.2f GB from %s\n", size / 1e9, bin_path);
     return wf;
 }
 
@@ -606,7 +608,7 @@ static Vocabulary *load_vocab(const char *path) {
     }
 
     fclose(f);
-    printf("[vocab] Loaded %d tokens\n", num_entries);
+    LOG("[vocab] Loaded %d tokens\n", num_entries);
     return v;
 }
 
@@ -681,13 +683,15 @@ static PromptTokens *encode_prompt_text_to_tokens(const char *text) {
     pt->ids = ids;
     pt->count = n;
 
-    fprintf(stderr, "Tokens (%d): [", n);
-    for (int i = 0; i < n && i < 20; i++) {
-        if (i > 0) fprintf(stderr, ", ");
-        fprintf(stderr, "%u", ids[i]);
+    LOG("Tokens (%d): [", n);
+    if (g_verbose) {
+        for (int i = 0; i < n && i < 20; i++) {
+            if (i > 0) fprintf(stderr, ", ");
+            fprintf(stderr, "%u", ids[i]);
+        }
+        if (n > 20) fprintf(stderr, ", ...");
+        fprintf(stderr, "]\n");
     }
-    if (n > 20) fprintf(stderr, ", ...");
-    fprintf(stderr, "]\n");
 
     return pt;
 }
@@ -998,7 +1002,7 @@ static MetalCtx *metal_setup(void) {
         fprintf(stderr, "ERROR: No Metal device\n");
         free(ctx); return NULL;
     }
-    printf("[metal] Device: %s\n", [[ctx->device name] UTF8String]);
+    LOG("[metal] Device: %s\n", [[ctx->device name] UTF8String]);
 
     ctx->queue = [ctx->device newCommandQueue];
     if (!ctx->queue) {
@@ -1029,7 +1033,7 @@ static MetalCtx *metal_setup(void) {
                 [[error localizedDescription] UTF8String]);
         free(ctx); return NULL;
     }
-    printf("[metal] Shader compile: %.0f ms\n", now_ms() - t0);
+    LOG("[metal] Shader compile: %.0f ms\n", now_ms() - t0);
 
     // Create pipelines
     id<MTLComputePipelineState> (^makePipe)(NSString *) = ^(NSString *name) {
@@ -1185,7 +1189,7 @@ static MetalCtx *metal_setup(void) {
                                                         options:MTLResourceStorageModeShared];
         ctx->buf_attn_gate   = [ctx->device newBufferWithLength:NUM_ATTN_HEADS * HEAD_DIM * sizeof(float)
                                                         options:MTLResourceStorageModeShared];
-        printf("[metal] GPU attention buffers: %d KV caches (%.1f MB each), scores buf %.1f MB\n",
+        LOG("[metal] GPU attention buffers: %d KV caches (%.1f MB each), scores buf %.1f MB\n",
                NUM_FULL_ATTN_LAYERS, kv_cache_size / 1e6,
                (double)(NUM_ATTN_HEADS * MAX_SEQ_LEN * sizeof(float)) / 1e6);
     }
@@ -1209,7 +1213,7 @@ static MetalCtx *metal_setup(void) {
         ctx->buf_delta_output  = [ctx->device newBufferWithLength:8192*sizeof(float)  options:MTLResourceStorageModeShared];
         ctx->buf_conv_input    = [ctx->device newBufferWithLength:12288*sizeof(float) options:MTLResourceStorageModeShared];
         ctx->buf_conv_output   = [ctx->device newBufferWithLength:12288*sizeof(float) options:MTLResourceStorageModeShared];
-        printf("[metal] Delta-net GPU buffers: %d layers (%.1f MB state + %.1f MB scratch)\n",
+        LOG("[metal] Delta-net GPU buffers: %d layers (%.1f MB state + %.1f MB scratch)\n",
                NUM_LINEAR_LAYERS,
                NUM_LINEAR_LAYERS * (64*128*128*4 + 3*12288*4) / 1e6,
                (2048+2048+8192+64+64+8192+12288+12288) * 4 / 1e6);
@@ -1219,7 +1223,7 @@ static MetalCtx *metal_setup(void) {
     ctx->pipeline_event = [ctx->device newSharedEvent];
     ctx->event_value = 0;
 
-    printf("[metal] Inference pipelines ready (multi-expert[%d] + shared buffers allocated)\n", MAX_K);
+    LOG("[metal] Inference pipelines ready (multi-expert[%d] + shared buffers allocated)\n", MAX_K);
     return ctx;
 }
 
@@ -1252,7 +1256,7 @@ static void metal_set_weights(MetalCtx *ctx, void *data, size_t size) {
         fprintf(stderr, "  data=%p, aligned_size=%zu -- GPU matmul will fall back to CPU\n",
                 data, aligned_size);
     } else {
-        printf("[metal] Weight file wrapped as Metal buffer (%.2f GB)\n",
+        LOG("[metal] Weight file wrapped as Metal buffer (%.2f GB)\n",
                aligned_size / 1e9);
     }
 }
@@ -3800,7 +3804,7 @@ static void build_layer_cache(WeightFile *wf) {
     }
 
     layer_cache_built = 1;
-    printf("[cache] Pre-computed weight pointers for %d layers\n", NUM_LAYERS);
+    LOG("[cache] Pre-computed weight pointers for %d layers\n", NUM_LAYERS);
 }
 
 // ============================================================================
@@ -6557,6 +6561,7 @@ int main(int argc, char **argv) {
             {"serve",         required_argument, 0, 'R'},
             {"predict",       no_argument,       0, 'D'},
             {"collect-routing", required_argument, 0, 'Z'},
+            {"verbose",       no_argument,       0, 'V'},
             {"help",          no_argument,       0, 'h'},
             {0, 0, 0, 0}
         };
@@ -6591,6 +6596,7 @@ int main(int argc, char **argv) {
                     break;
                 case 'B': g_think_budget = atoi(optarg); break;
                 case 'R': serve_port = atoi(optarg); break;
+                case 'V': g_verbose = 1; break;
                 case 'h': print_usage(argv[0]); return 0;
                 default:  print_usage(argv[0]); return 1;
             }
@@ -6648,22 +6654,9 @@ int main(int argc, char **argv) {
             g_expert_cache = expert_cache_new(g_metal->device, cache_entries);
         }
 
-        printf("=== Qwen3.5-397B-A17B Metal Inference Engine ===\n");
-        printf("Model:    %s\n", model_path);
-        printf("Weights:  %s\n", weights_path);
-        printf("Manifest: %s\n", manifest_path);
-        printf("Vocab:    %s\n", vocab_path);
-        printf("K:        %d experts/layer\n", K);
-        printf("Quant:    %s experts (%zu bytes each)\n", g_use_2bit ? "2-bit" : "4-bit", active_expert_size());
-        printf("Linear:   %s\n", gpu_linear_attn_enabled ? "fused GPU delta-net" : "CPU/hybrid fallback");
-        printf("Tokens:   %d\n", max_tokens);
-        if (g_malloc_cache) {
-            printf("Cache:    malloc %d entries (%.1f GB)\n",
-                   malloc_cache_entries, (double)malloc_cache_entries * active_expert_size() / 1e9);
-        } else {
-            printf("Cache:    %d entries%s\n", cache_entries,
-                   cache_entries > 0 ? "" : " (disabled)");
-        }
+        LOG("=== Qwen3.5-397B-A17B Metal Inference Engine ===\n");
+        LOG("Model:    %s\n", model_path);
+        LOG("Quant:    %s experts\n", g_use_2bit ? "2-bit" : "4-bit");
 
         double t0 = now_ms();
 
@@ -6690,9 +6683,9 @@ int main(int argc, char **argv) {
         PromptTokens *pt = NULL;
         if (serve_port == 0) {
             if (prompt_text) {
-                pt = encode_prompt_text_to_tokens(prompt_text);
+                pt = tokenize_chat_message(prompt_text);
                 if (!pt) {
-                    fprintf(stderr, "ERROR: Failed to encode prompt. Make sure encode_prompt.py exists.\n");
+                    fprintf(stderr, "ERROR: Failed to encode prompt.\n");
                     return 1;
                 }
             } else if (!prompt_tokens_path) {
@@ -6709,11 +6702,13 @@ int main(int argc, char **argv) {
                 fprintf(stderr, "ERROR: Failed to load prompt tokens from %s\n", prompt_tokens_path);
                 return 1;
             }
-            printf("[prompt] %d tokens:", pt->count);
-            for (int i = 0; i < pt->count && i < 20; i++) {
-                printf(" %d", pt->ids[i]);
+            LOG("[prompt] %d tokens:", pt->count);
+            if (g_verbose) {
+                for (int i = 0; i < pt->count && i < 20; i++) {
+                    fprintf(stderr, " %d", pt->ids[i]);
+                }
+                fprintf(stderr, "\n");
             }
-            printf("\n");
         }
 
         // ---- Auto-detect 2-bit experts ----
@@ -6727,7 +6722,7 @@ int main(int argc, char **argv) {
                 int pfd4 = open(probe, O_RDONLY);
                 if (pfd4 < 0) {
                     g_use_2bit = 1;
-                    printf("[auto] Using 2-bit experts (4-bit not found)\n");
+                    LOG("[auto] Using 2-bit experts (4-bit not found)\n");
                 } else {
                     close(pfd4);
                 }
@@ -6777,7 +6772,9 @@ int main(int argc, char **argv) {
                 }
             }
         }
-        printf("[experts] %d/%d packed layer files available (mmap'd)\n", expert_layers_available, NUM_LAYERS);
+        LOG("[experts] %d/%d packed layer files available (mmap'd)\n", expert_layers_available, NUM_LAYERS);
+        if (expert_layers_available == 0)
+            fprintf(stderr, "WARNING: no expert files found — output will be degenerate\n");
 
         // ---- LZ4 compressed experts: auto-detect and load ----
         {
@@ -6813,7 +6810,7 @@ int main(int argc, char **argv) {
                     for (int k = 0; k < MAX_K; k++) {
                         g_lz4_comp_bufs[k] = malloc(EXPERT_SIZE + 4096);
                     }
-                    printf("[lz4] %d/%d layers using LZ4 compressed experts\n",
+                    LOG("[lz4] %d/%d layers using LZ4 compressed experts\n",
                            lz4_layers, NUM_LAYERS);
                 }
             }
@@ -6822,7 +6819,7 @@ int main(int argc, char **argv) {
         // Wire up tiered I/O globals
         g_layer_fds_cold = layer_fds_cold;
         if (!g_use_lz4)
-            printf("[tiered-io] Cold fds (F_NOCACHE) + warm fds (page cached) active\n");
+            LOG("[tiered-io] Cold fds (F_NOCACHE) + warm fds (page cached) active\n");
 
         // Warm page cache hint
         if (expert_layers_available > 0) {
@@ -6833,7 +6830,7 @@ int main(int argc, char **argv) {
                     pread(layer_fds[i], dummy, sizeof(dummy), 0);
                 }
             }
-            printf("[warmup] Page cache hint: %.1f ms\n", now_ms() - t_warm);
+            LOG("[warmup] Page cache hint: %.1f ms\n", now_ms() - t_warm);
         }
 
         // ---- Allocate per-layer state ----
@@ -6850,7 +6847,9 @@ int main(int argc, char **argv) {
         }
 
         double t_init = now_ms();
-        printf("[init] Setup: %.1f ms\n\n", t_init - t0);
+        LOG("[init] Setup: %.1f ms\n", t_init - t0);
+        printf("Qwen3.5-397B-A17B · %s · ready in %.1f s\n\n",
+               g_use_2bit ? "2-bit" : "4-bit", (t_init - t0) / 1000.0);
 
         // ---- Allocate working buffers ----
         float *hidden = calloc(HIDDEN_DIM, sizeof(float));
@@ -6872,7 +6871,7 @@ int main(int argc, char **argv) {
         // ---- Generate tokens ----
         reset_delta_net_state();  // zero GPU delta-net state before generation
         if (g_cache_telemetry_enabled) cache_telemetry_reset();
-        printf("--- Generating %d tokens ---\n", max_tokens);
+        LOG("--- Generating %d tokens ---\n", max_tokens);
         int pos = 0;  // position counter for RoPE
 
         // ---- Batch prefill: pre-embed all prompt tokens ----
@@ -6886,7 +6885,7 @@ int main(int argc, char **argv) {
                 embed_lookup(wf, pt->ids[i], embed_batch + (size_t)i * HIDDEN_DIM);
             }
             double embed_ms = now_ms() - t_embed;
-            printf("  [prefill] batch embed %d tokens: %.1f ms\n", pt->count, embed_ms);
+            LOG("  [prefill] batch embed %d tokens: %.1f ms\n", pt->count, embed_ms);
         }
 
         // ---- Batch prefill loop ----
@@ -6932,7 +6931,7 @@ int main(int argc, char **argv) {
             double prefill_batch_ms = now_ms() - t_prefill_batch;
             double avg_ms = (pt->count > 2) ?
                 (prefill_batch_ms - first_tok_ms) / (pt->count - 2) : first_tok_ms;
-            printf("  [prefill] %d/%d tokens: %.0f ms (first: %.0f ms, rest avg: %.0f ms)\n",
+            LOG("  [prefill] %d/%d tokens: %.0f ms (first: %.0f ms, rest avg: %.0f ms)\n",
                    pt->count - 1, pt->count, prefill_batch_ms, first_tok_ms, avg_ms);
         }
 
@@ -6990,15 +6989,17 @@ int main(int argc, char **argv) {
                 for (int k = 1; k < 5; k++) if (topv[k] < topv[min_k]) min_k = k;
                 if (logits[i] > topv[min_k]) { topv[min_k] = logits[i]; top5[min_k] = i; }
             }
-            fprintf(stderr, "[debug] Top 5 logits (next_token=%d):\n", next_token);
-            for (int i = 0; i < 5; i++) {
-                fprintf(stderr, "  token %d (\"%s\") logit=%.4f\n",
-                        top5[i], decode_token(vocab, top5[i]), topv[i]);
+            LOG("[debug] Top 5 logits (next_token=%d):\n", next_token);
+            if (g_verbose) {
+                for (int i = 0; i < 5; i++) {
+                    fprintf(stderr, "  token %d (\"%s\") logit=%.4f\n",
+                            top5[i], decode_token(vocab, top5[i]), topv[i]);
+                }
+                fprintf(stderr, "[debug] hidden rms after final_norm=%.4f, logits rms=%.4f\n",
+                        vec_rms(hidden, HIDDEN_DIM), vec_rms(logits, VOCAB_SIZE));
             }
-            fprintf(stderr, "[debug] hidden rms after final_norm=%.4f, logits rms=%.4f\n",
-                    vec_rms(hidden, HIDDEN_DIM), vec_rms(logits, VOCAB_SIZE));
         }
-        printf("[ttft] %.0f ms (prefill %d tokens + lm_head %.0f ms)\n",
+        LOG("[ttft] %.0f ms (prefill %d tokens + lm_head %.0f ms)\n",
                ttft_ms, pt->count, lm_ms);
 
         printf("\n--- Output ---\n");
@@ -7020,7 +7021,7 @@ int main(int argc, char **argv) {
 
             // Check EOS
             if (next_token == EOS_TOKEN_1 || next_token == EOS_TOKEN_2) {
-                fprintf(stderr, "\n[eos] Token %d at position %d\n", next_token, gen);
+                LOG("\n[eos] Token %d at position %d\n", next_token, gen);
                 break;
             }
 
@@ -7075,44 +7076,23 @@ int main(int argc, char **argv) {
             double t_gen_end = now_ms();
             double tok_time = t_gen_end - t_gen_start;
 
-            // Print progress to stderr
-            fprintf(stderr, "  [gen %d/%d] token_id=%d (%.0f ms, %.2f tok/s)\n",
+            LOG("  [gen %d/%d] token_id=%d (%.0f ms, %.2f tok/s)\n",
                     gen, max_tokens, next_token, tok_time, 1000.0 / tok_time);
         }
 
         if (g_timing_enabled) timing_print();
-        printf("\n\n--- Statistics ---\n");
         double total_time = now_ms() - t0;
-        printf("Total time:     %.1f s\n", total_time / 1000.0);
-        printf("TTFT:           %.0f ms\n", ttft_ms);
-        printf("Tokens:         %d generated\n", total_generated);
         if (total_generated > 1) {
             double gen_time = total_time - ttft_ms;
-            printf("Generation:     %.1f s (%.2f tok/s)\n",
-                   gen_time / 1000.0, (total_generated - 1) * 1000.0 / gen_time);
+            printf("\n\n%.2f tok/s · %d tokens · %.1f s\n",
+                   (total_generated - 1) * 1000.0 / gen_time,
+                   total_generated,
+                   total_time / 1000.0);
         }
-        printf("Config:         K=%d experts, %d layers\n", K, NUM_LAYERS);
         if (g_expert_cache) {
-            uint64_t total = g_expert_cache->hits + g_expert_cache->misses;
-            printf("Expert cache:   %llu hits, %llu misses (%.1f%% hit rate), %d/%d entries used\n",
-                   g_expert_cache->hits, g_expert_cache->misses,
-                   total > 0 ? 100.0 * g_expert_cache->hits / total : 0.0,
-                   g_expert_cache->num_entries, g_expert_cache->max_entries);
             cache_telemetry_print(g_expert_cache->hits, g_expert_cache->misses);
         } else if (g_malloc_cache) {
-            uint64_t total = g_malloc_cache->hits + g_malloc_cache->misses;
-            printf("Expert cache:   malloc %llu hits, %llu misses (%.1f%% hit rate), %d/%d entries used\n",
-                   g_malloc_cache->hits, g_malloc_cache->misses,
-                   total > 0 ? 100.0 * g_malloc_cache->hits / total : 0.0,
-                   g_malloc_cache->num_entries, g_malloc_cache->max_entries);
             cache_telemetry_print(g_malloc_cache->hits, g_malloc_cache->misses);
-        }
-
-        if (g_spec_route_attempts > 0) {
-            printf("Spec routing:   %llu attempts, %llu preloads, %llu hits (%.1f%% prediction accuracy)\n",
-                   g_spec_route_attempts, g_spec_route_preloads, g_spec_route_hits,
-                   g_spec_route_attempts > 0
-                       ? 100.0 * g_spec_route_hits / g_spec_route_attempts : 0.0);
         }
 
         if (g_freq_tracking) freq_print_analysis(K);
